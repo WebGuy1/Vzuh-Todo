@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+
+{% block title %}Bookify{% endblock %}
+
+
+{% block head %}
+
+    {{ super() }}
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="jumbotron">
+  <h1 class="display-4">Lets become more productive together</h1>
+  <p class="lead"> You don't try to build a wall. You don't start there. You say "I'm gonna lay this brick as perfectly as a brick can be laid. You do it every single day and soon you have the wall." </p>
+  <hr class="my-4">
+  <p>Vzuh-todo helps you on your way to success by dividing it into small and easily accomplishable tasks. You just lay theese bricks and soon you have a wall. </p>
+  <a class="btn btn-primary btn-lg" href=" {{ url_for('todo') }} " role="button">Try it out</a>
+</div>
+
+
+{% endblock %}
